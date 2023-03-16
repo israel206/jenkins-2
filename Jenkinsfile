@@ -26,14 +26,17 @@ pipeline {
         // }
         // stage('BDD tests job'){
         //     steps {
-        //         /* colocar os jobs do estágio de execução de BDD aqui CONFLITO DE ooooop´ss! */
+        //         withCredentials(([string(credentialsId: 'telegramToken', variable: 'TOKEN'),
+        //         string(credentialsId: 'telegramChatId', variable: 'CHAT_ID')])) {
+        //             sh 'curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d "chat_id=${CHAT_ID}"  -d text=" ❌ Falha ao construir(build) 😱"'
+        //             sh 'exit 1'
         //     }
         // }
         stage('Finished msg') {
             steps {
                 withCredentials(([string(credentialsId: 'telegramToken', variable: 'TOKEN'),
-            string(credentialsId: 'telegramChatId', variable: 'CHAT_ID')])) {
-                    sh 'curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d "chat_id=${CHAT_ID}"  -d text="✅ Build aceito com sucesso! 😊"'
+                    string(credentialsId: 'telegramChatId', variable: 'CHAT_ID')])) {
+                        sh 'curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d "chat_id=${CHAT_ID}"  -d text=" ✅ Construção(Build) aceita com sucesso! 😊"'
                 }
             }
         }
