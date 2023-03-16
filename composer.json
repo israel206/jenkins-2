@@ -1,0 +1,20 @@
+{
+    "name": "pipeline/jenkins",
+    "description": "Project of test",
+    "type": "composer-plugin",
+    "require": {
+        "phpunit/phpunit": "9.6.x-dev"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Pipeline\\Jenkins\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "s"
+        }
+    ],
+    "minimum-stability": "dev"
+}
