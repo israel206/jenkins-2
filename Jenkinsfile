@@ -3,12 +3,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone') {
-            steps {
-                git branch: '/main'
-                url: 'https://github.com/israel206/jenkins-2.git'
-            }
-        }
         // stage('Checkout') {
         //     steps {
         //         /* colocar os jobs do estágio de Checkout aquis */
