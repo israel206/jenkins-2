@@ -1,0 +1,53 @@
+"ok": true,
+    "result": [
+        {
+            "update_id": 518472234,
+            "message": {
+                "message_id": 1,
+                "from": {
+                    "id": 499741153,
+                    "is_bot": false,
+                    "first_name": "Israel",
+                    "username": "IsraelCharlles",
+                    "language_code": "pt-br"
+                },
+                "chat": {
+                    "id": 499741153,
+                    "first_name": "Israel",
+                    "username": "IsraelCharlles",
+                    "type": "private"
+                },
+                "date": 1678746367,
+                "text": "/start",
+                "entities": [
+                    {
+                        "offset": 0,
+                        "length": 6,
+                        "type": "bot_command"
+                    }
+                ]
+            }
+        },
+        {
+            "update_id": 518472235,
+            "message": {
+                "message_id": 2,
+                "from": {
+                    "id": 499741153,
+                    "is_bot": false,
+                    "first_name": "Israel",
+                    "username": "IsraelCharlles",
+                    "language_code": "pt-br"
+                },
+                "chat": {
+                    "id": 499741153,
+                    "first_name": "Israel",
+                    "username": "IsraelCharlles",
+                    "type": "private"
+                },
+                "date": 1678746372,
+                "text": "oi"
+            }
+        }
+    ]
+}
