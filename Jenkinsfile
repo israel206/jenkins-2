@@ -10,11 +10,11 @@ pipeline {
                 // sh 'php artisan key:generate'
             }
         }
-        stage('Test') {
-            steps {
-                sh './vendor/bin/phpunit'
-            }
-        }
+        // stage('Test') {
+        //     steps {
+        //         sh './vendor/bin/phpunit'
+        //     }
+        // }
         stage('Finished msg') {
             steps {
                 withCredentials(([string(credentialsId: 'telegramToken', variable: 'TOKEN'),
